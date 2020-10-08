@@ -5,12 +5,14 @@ let diceSum = document.querySelector("#dice-total");
 let showButton = document.querySelector("#roll-result");
 let rollList = document.querySelector("#all-rolls");
 let resetRolls = document.querySelector("#reset-button");
+let dieFaces = document.querySelector("#dice-faces");
 
 rollButton.addEventListener("click", function () {
   let value = Number(userInput.value);
   let index = 0;
   while (value > index) {
-    dieResult = Math.floor(Math.random() * 6 + 1);
+    let face = Number(dieFaces.value);
+    dieResult = Math.floor(Math.random() * face + 1);
     dieRolls.push(dieResult);
     console.log(dieRolls);
     diceSum.innerHTML = dieRolls.reduce(addArray);
