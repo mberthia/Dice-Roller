@@ -8,7 +8,7 @@
   <body>
     <div>
       <h1>Enter a number of dice</h1>
-      <input type="number" placeholder="Number of dice rolls" id="user-input" />
+      <input type="number" placeholder="#" id="user-input" min="1" max="6" />
       <button id="dice-button">Roll!</button>
       <br />
       <p>Total:</p>
@@ -17,7 +17,10 @@
     <div>
       <br />
       <button id="roll-result">Show all rolls</button>
-      <ol id="show-rolls"></ol>
+      <ol id="all-rolls"></ol>
+      <br />
+      <br />
+      <button id="reset-button">Reset rolls</button>
     </div>
     <script src="./main.js"></script>
   </body>

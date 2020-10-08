@@ -3,7 +3,8 @@ let rollButton = document.querySelector("#dice-button");
 let userInput = document.querySelector("#user-input");
 let diceSum = document.querySelector("#dice-total");
 let showButton = document.querySelector("#roll-result");
-let rollList = document.querySelector("#show-rolls");
+let rollList = document.querySelector("#all-rolls");
+let resetRolls = document.querySelector("#reset-button");
 
 rollButton.addEventListener("click", function () {
   let value = Number(userInput.value);
@@ -17,7 +18,6 @@ rollButton.addEventListener("click", function () {
       return total + Number;
     }
     index++;
-    console.log(dieRolls.length);
   }
 });
 
@@ -26,7 +26,11 @@ showButton.addEventListener("click", function () {
   while (dieRolls.length > index1) {
     let fullList = document.createElement("li");
     fullList.innerHTML = dieRolls[index1];
-    document.getElementById("show-rolls").appendChild(fullList);
+    document.getElementById("all-rolls").appendChild(fullList);
     index1++;
   }
+});
+
+resetRolls.addEventListener("click", function () {
+  location.reload();
 });
