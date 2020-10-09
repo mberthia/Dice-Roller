@@ -1,1 +1,22 @@
+* {
+  box-sizing: border-box;
+}
 
+#button-area {
+  background-image: url(https://geekoutsw.files.wordpress.com/2017/11/different-dice.png);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  padding: 100px;
+  padding-left: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+
+#all-rolls {
+  background-color: yellow;
+  position: relative;
+  border: 5px solid black;
+  font-weight: bold;
+  width: 200px;
+}
