@@ -10,7 +10,8 @@
   padding: 100px;
   padding-left: 20px;
   padding-top: 20px;
-  position: relative;
+  position: absolute;
+  font-weight: bold;
 }
 
 #all-rolls {
